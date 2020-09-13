@@ -1,46 +1,168 @@
 <!DOCTYPE html>
 <html lang="ru">
-   <head>
-      <meta charset="utf-8">
-      <title>HTML Academy: Нёрдс Каталог</title>
-   </head>
-   <body>
-      <header>
-         <div><img src="img/nerds-logo.svg" style="width: 150px; height: 50px;" alt="лого"></div>
-         <nav>
-            <ul>
-               <li><a href="404.html">Студия</a></li>
-               <li><a href="404.html">Клиенты</a></li>
-               <li><a href="catalog.html">Магазин</a></li>
-               <li><a href="404.html">Контакты</a></li>
-            </ul>
-            <ul>
-               <li><a href="404.html">Корзина</a></li>
-            </ul>
-         </nav>
-      </header>
-      <main>
-      </main>
-      <footer>
-         <section>
-            <h2>Наши соц сети</h2>
-            <ul>
-               <li>
-                  <a href="#">Vk</a>
-               </li>
-               <li>
-                  <a href="#">Face</a>
-               </li>
-               <li>
-                  <a href="#">Inst</a>
-               </li>
-            </ul>
-         </section>
-         <section>
-            <h2>Давайте дружить!</h2>
-            <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-         </section>
-      </footer>
-   </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс Каталог</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <img src="img/nerds-logo.svg" width="150" height="50" alt="лого">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="404.html">Студия</a></li>
+        <li><a href="404.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="404.html">Контакты</a></li>
+      </ul>
+      <ul>
+        <li><a href="404.html">Корзина</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Магазин готовы шаблонов</h1>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Наши предложения</h2>
+      <section>
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <!-- Тут форма -->
+        <button type="button">Показать</button>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Сотритровка товаров</h2>
+        <p>Соритроваать:</p>
+        <ul>
+          <li>
+            <button type="button">по цене</button>
+          </li>
+          <li>
+            <button type="button">по типу</button>
+          </li>
+          <li>
+            <button type="button">по названию</button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Наши товары</h2>
+        <ul>
+          <li>
+            <!-- <div>Тут кружочки</div> -->
+            <div>
+              <img src="img/img-sedona_1.jpg" width="150" height="250" alt="sedona">
+            </div>
+            <div>
+              <h3><a href="#">sedona</a></h3>
+              <p>Информационный сайт для туристов</p>
+              <a href="#">9 900 <span>рубль</span></a>
+            </div>
+          </li>
+          <li>
+            <!-- <div>Тут кружочки</div> -->
+            <div>
+              <img src="img/img-pink_1.jpg" width="150" height="250" alt="pink app">
+            </div>
+            <div>
+              <h3><a href="#">pink app</a></h3>
+              <p>Продуктивный лендинг прилоения на iOS и Android</p>
+              <a href="#">9 900 <span>рубль</span></a>
+            </div>
+          </li>
+          <li>
+            <!-- <div>Тут кружочки</div> -->
+            <div>
+              <img src="img/img-barbershop_1.jpg" width="150" height="250" alt="barbershop">
+            </div>
+            <div>
+              <h3><a href="#">barbershop</a></h3>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <a href="#">9 900 <span>рубль</span></a>
+            </div>
+          </li>
+          <li>
+            <!-- <div>Тут кружочки</div> -->
+            <div>
+              <img src="img/img-mishka_1.jpg" width="150" height="250" alt="mishka">
+            </div>
+            <div>
+              <h3><a href="#">mishka</a></h3>
+              <p>Интернет-магазин, вязаных игрушек</p>
+              <a href="#">9 900 <span>рубль</span></a>
+            </div>
+          </li>
+          <li>
+            <!-- <div>Тут кружочки</div> -->
+            <div>
+              <img src="img/img-aplus_1.jpg" width="150" height="250" alt="a plus">
+            </div>
+            <div>
+              <h3><a href="#">a plus</a></h3>
+              <p>Лендинг курсво повышения квалификации</p>
+              <a href="#">9 900 <span>рубль</span></a>
+            </div>
+          </li>
+          <li>
+            <!-- <div>Тут кружочки</div> -->
+            <div>
+              <img src="img/img-kvast_1.jpg" width="150" height="250" alt="кваст">
+            </div>
+            <div>
+              <h3><a href="#">кваст</a></h3>
+              <p>Промо-сайт производителя кравфтового кваса</p>
+              <a href="#">9 900 <span>рубль</span></a>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">следующая</a></li>
+        </ul>
+      </section>
+    </section>
+    <section>
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <div>
+        <!-- Тут карта -->
+      </div>
+      <div>
+        <address>
+          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        </address>
+        <p>
+          тел. <a href="tel:+78122757575">+7(812) 275-75-75</a>
+        </p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section>
+      <h2 class="visually-hidden">Наши соц сети</h2>
+      <ul>
+        <li>
+          <a href="#">Vk</a>
+        </li>
+        <li>
+          <a href="#">Face</a>
+        </li>
+        <li>
+          <a href="#">Inst</a>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2>Давайте дружить!</h2>
+      <p>Давайте дружить, это выгодно!</p>
+      <p>Скидка 10% для друзей из социальных сетей.</p>
+    </section>
+  </footer>
+</body>
+
 </html>
