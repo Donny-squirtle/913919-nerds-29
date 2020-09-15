@@ -1,0 +1,23 @@
+:root{
+--basik-red: #FB565A;
+--light-red:#E74246;
+--dark-red:#D7373B;
+--basik-green:#00CA74;
+--light-green:#00BC6C;;
+--dark-green:#00AA62;;
+--basik-yellow:#EFC849;
+--light-yellow:#EAB534;
+--dark-yellow:#E5A722;
+--basik-white:#FFFFFF;
+--light-gray:#EEEEEE;
+--basik-gray:#DFDFDF;
+--dark-gray:#283136;
+--basik-black:#000000;
+--shadow-text:rgba(0, 1, 1, 0.1);
+}
+body{
+  font-family: "Roboto", Arial, sans-serif;
+}
+.visually-hidden{
+  display: none;
+}

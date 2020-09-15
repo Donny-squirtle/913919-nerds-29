@@ -1,133 +1,135 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <header>
-    <div>
+<body class="page-body">
+  <header class="main-header">
+    <div class="header-logo">
       <img src="img/nerds-logo.svg" width="150" height="50" alt="лого">
     </div>
-    <nav>
-      <ul>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
         <li><a href="404.html">Студия</a></li>
         <li><a href="404.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="404.html">Контакты</a></li>
       </ul>
       <ul>
-        <li><a href="404.html">Корзина</a></li>
+        <li class="cart"><a href="404.html">Корзина</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section>
+  <main class="container">
+    <section class="slider">
       <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
-      <ul>
-        <li>
+      <ul class="slider-list">
+        <li class="slider-item">
           <p>Долго, дорого, скрупулезно.</p>
           <p>Математически выверенный дизайн для вашего сайта или мобильног</p>
-          <a href="#">Узнать больше</a>
+          <a class="button" href="#">Узнать больше</a>
         </li>
-        <li>
+        <li class="slider-item">
           <p>Любим математика как никто другой</p>
           <p>Накакого креатива, только математичекские формулу для расчета идеальных пропорций</p>
-          <a href="#">Узнать больше</a>
+          <a class="button" href="#">Узнать больше</a>
         </li>
-        <li>
+        <li class="slider-item">
           <p>Только ночь, только хардкор</p>
           <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
-          <a href="#">Узнать больше</a>
+          <a class="button" href="#">Узнать больше</a>
         </li>
       </ul>
       <!-- <div><img src="img/nerds-index-slide1_1.png" alt="" heigh="50px" width="150px" alt="телефон"></div> -->
       <div>
-        <button type="button">1</button>
-        <button type="button">1</button>
-        <button type="button">1</button>
+        <!-- Кнопки для слайдера -->
+        <button class="button-control" type="button">1</button>
+        <button class="button-control" type="button">1</button>
+        <button class="button-control" type="button">1</button>
       </div>
     </section>
-    <section>
+    <section class="service">
       <h2 class="visually-hidden">Наши услуги</h2>
-      <ul>
-        <li>
+      <ul class="service-list">
+        <li class="service-item">
           <div><img src="img/illustration-1_1.jpg" width="150" height="50" alt="веб-сайты"></div>
           <h3>веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a href="#">Заказать</a>
+          <a class="button" href="#">Заказать</a>
         </li>
-        <li>
+        <li class="service-item">
           <div><img src="img/illustration-2_1.jpg" width="150" height="50" alt="приложения"></div>
           <h3>приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#">Заказать</a>
+          <a class="button" href="#">Заказать</a>
         </li>
-        <li>
+        <li class="service-item">
           <div><img src="img/illustration-3_1.jpg" width="150" height="50" alt="презентации"></div>
           <h3>презентации</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#">Заказать</a>
+          <a class="button" href="#">Заказать</a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="about">
       <h2 class="visually-hidden">Наша студия в Краснодаре</h2>
-      <section>
+      <div class="about-text">
         <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математически</p>
         <p>выполняем заказы на разработку:</p>
-        <ul>
+        <ul class="about-text-list">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильные приложения для iOS и Android </li>
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-      </section>
-      <section>
-        <h2 class="visually-hidden">С 2004 года любм точность во всем</h2>
+      </div>
+      <div class="about-skill">
         <div><img src="img/nerds-illustration_1.png" width="150" height="50" alt="лого"></div>
         <p>с 2004 года любм точность во всем:</p>
-        <ul>
-          <li>
+        <ul class="about-skill-list">
+          <li class="about-skill-item">
             <p>146%</p>
             <p>Уровень самоотдачи</p>
           </li>
-          <li>
+          <li class="about-skill-item">
             <p>100%</p>
             <p>Соблюдение сроков</p>
           </li>
-          <li>
+          <li class="about-skill-item">
             <p>50%</p>
             <p>Минимальная предоплата</p>
           </li>
         </ul>
-      </section>
+      </div>
     </section>
-    <section>
+    <section class="examples">
       <h2 class="visually-hidden">Наши работы</h2>
-      <ul>
-        <li>
-          <a href="#"><img src="img/logo-1_1.png" width="150" height="50" alt="html академия"></a>
+      <ul class="examples-list">
+        <li class="examples-item">
+          <a class="button" href="#"><img src="img/logo-1_1.png" width="150" height="50" alt="html академия"></a>
         </li>
-        <li>
-          <a href="#"><img src="img/logo-2_1.png" width="150" height="50" alt="Барбершоп dorodinski"></a>
+        <li class="examples-item">
+          <a class="button" href="#"><img src="img/logo-2_1.png" width="150" height="50" alt="Барбершоп dorodinski"></a>
         </li>
-        <li>
-          <a href="#"><img src="img/logo-3_1.png" width="150" height="50" alt="pink"></a>
+        <li class="examples-item">
+          <a class="button" href="#"><img src="img/logo-3_1.png" width="150" height="50" alt="pink"></a>
         </li>
-        <li>
-          <a href="#"><img src="img/logo-4_1.png" width="150" height="50" alt="mishka"></a>
+        <li class="examples-item">
+          <a class="button" href="#"><img src="img/logo-4_1.png" width="150" height="50" alt="mishka"></a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <div>
+      <div class="contacts-maps">
         <!-- Тут карта -->
       </div>
-      <div>
+      <div class="contacts-info">
         <address>
           191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         </address>
@@ -137,29 +139,46 @@
       </div>
     </section>
   </main>
-  <footer>
-    <section>
+  <footer class="page-footer">
+    <section class="footer-social">
       <h2 class="visually-hidden">Наши соц сети</h2>
       <ul>
         <li>
-          <a href="#">Vk</a>
+          <a class="social-button" href="#">Vk</a>
         </li>
         <li>
-          <a href="#">Face</a>
+          <a class="social-button" href="#">Face</a>
         </li>
         <li>
-          <a href="#">Inst</a>
+          <a class="social-button" href="#">Inst</a>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="footer-text">
       <h2>Давайте дружить!</h2>
       <p>Давайте дружить, это выгодно!</p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </section>
   </footer>
-  <section>
-    <h2 class="visually-hidden">Напишите нам</h2>
+  <section class="popup-contacts">
+    <h2>Напишите нам</h2>
+    <form action="#" method="POST" oninput="">
+      <div>
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" placeholder="Имя Фамилия">
+      </div>
+      <div>
+        <label for="e-mail">Ваше e-mail</label>
+        <input type="text" id="e-mail" placeholder="e-mail@example.com">
+      </div>
+      <div>
+        <label for="name">Текст письма</label>
+        <input type="text" id="name" placeholder="В свободной форме">
+      </div>
+      <div class="button">
+        <input type="submit" value="Отправить">
+      </div>
+    </form>
     <!-- Тут форма связи-->
   </section>
 </body>
