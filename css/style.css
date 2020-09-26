@@ -1,23 +1,241 @@
 :root{
---basik-red: #FB565A;
---light-red:#E74246;
---dark-red:#D7373B;
---basik-green:#00CA74;
---light-green:#00BC6C;;
---dark-green:#00AA62;;
---basik-yellow:#EFC849;
---light-yellow:#EAB534;
---dark-yellow:#E5A722;
---basik-white:#FFFFFF;
---light-gray:#EEEEEE;
---basik-gray:#DFDFDF;
---dark-gray:#283136;
---basik-black:#000000;
---shadow-text:rgba(0, 1, 1, 0.1);
+  --basik-red: #FB565A;
+  --light-red:#E74246;
+  --dark-red:#D7373B;
+  --basik-green:#00CA74;
+  --light-green:#00BC6C;;
+  --dark-green:#00AA62;;
+  --basik-yellow:#EFC849;
+  --light-yellow:#EAB534;
+  --dark-yellow:#E5A722;
+  --basik-white:#FFFFFF;
+  --light-gray:#EEEEEE;
+  --basik-gray:#DFDFDF;
+  --dark-gray:#283136;
+  --basik-black:#000000;
+  --shadow-text:rgba(0, 1, 1, 0.1);
+  --shadow-black: rgba(0,0,0,0.3);
+  --shadow-white: rgba(255,255,255,0.3);
 }
-body{
+.page-body{
+  width: 1157px;
   font-family: "Roboto", Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  margin: 0 auto;
+  color: var(--dark-gray);
 }
-.visually-hidden{
-  display: none;
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Навигация */
+.main-header{
+  background-color: var(--light-gray);
+  color: var(--basik-black);
+}
+.main-navigation{
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 30px;
+}
+.main-navigation a{
+  color: var(--basik-black);
+}
+.main-navigation a:hover{
+  color: var(--basik-red);
+}
+.main-navigation a:active{
+  color: var(--shadow-black);
+}
+.user-navigation{
+  list-style: none;
+}
+.cart{
+  list-style: none;
+}
+
+ /* Слайдер */
+ .slider{
+   background-color: var(--light-gray);
+ }
+.slider .button{
+  background-color: var(--basik-red);
+  color: var(--basik-white);
+  width: 240px;
+  height: 50px;
+  border-radius: 3px;
+}
+.slider .button:hover{
+   background-color:  var(--light-red);
+}
+ .slider .button:active{
+  background-color:  var(--dark-red);
+  color: var(--shadow-white)
+}
+.button-control{
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--basik-white);
+  border: 0px;
+}
+.slider-img{
+  background: no-repeat url(../img/nerds-index-slide1_1.png);
+  width: 760px;
+height: 431px;
+}
+.slider-list{
+   list-style: none;
+}
+.slider-item p:nth-child(1){
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basik-black);
+  font-weight: 500;
+}
+/* Секция услуг */
+.service-list{
+  list-style: none;
+}
+.service-item div{
+  background-color: var(--dark-gray);
+  width: 300px;
+  height:146px;
+}
+.service-item h3{
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--basik-black)
+}
+.service-item p{
+  color: var(--dark-gray);
+}
+.button-red{
+  background-color: var(--basik-red);
+  color: var(--basik-white);
+  border-radius: 3px;
+  width: 160px;
+  height: 50px;
+}
+.button-red:hover{
+  background-color: var(--light-red) ;
+}
+.button-red:active{
+  background-color: var(--dark-red);
+  color: var(--shadow-white);
+}
+.button-green{
+  background-color: var(--basik-green);
+  color: var(--basik-white);
+  border-radius: 3px;
+  width: 160px;
+  height: 50px;
+}
+.button-green:hover{
+  background-color: var(--light-green);
+}
+.button-green:active{
+  background-color: var(--dark-green);
+  color: var(--shadow-white);
+}
+.button-yellow{
+  background-color: var(--basik-yellow);
+  color: var(--basik-white);
+  border-radius: 3px;
+  width: 160px;
+  height: 50px;
+}
+.button-yellow:hover{
+  background-color: var(--light-yellow);
+}
+.button-yellow:active{
+  background-color: var(--dark-yellow);
+  color: var(--shadow-white);
+}
+/* Блок Наша студия в Краснодаре */
+.about{
+  border-top: 2px solid var(--light-gray);
+}
+.about-text h2{
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basik-black);
+}
+.about-text p:nth-child(3){
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.about-text-list{
+  list-style: none;
+}
+.about-text-list li{
+  position: relative;
+}
+.about-text-list li::before{
+  content: " ";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  top: 10px;
+  background-color: var(--basik-red);
+}
+.about-skill p:nth-child(){
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basik-black);
+}
+.about-skill-item{
+  list-style: none;
+}
+.about-skill-item p:nth-child(1){
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basik-black);
+}
+/* Блок Наши работы */
+.examples{
+  border-top: 2px solid var(--light-gray);
+  border-bottom: 2px solid var(--light-gray);
+}
+.examples-list{
+  list-style: none;
+}
+/* Блок с каротой */
+.contacts{
+  background-color: var(--dark-gray);
+}
+/* Футер */
+.footer-social ul{
+  list-style: none;
+}
+.footer-text p:nth-child(2){
+font-weight: bold;
+font-size: 36px;
+line-height: 36px;
+color: var(--basik-black);
 }
