@@ -10,24 +10,27 @@
 
 <body class="page-body">
   <header class="main-header">
-    <div class="header-logo">
-      <img src="img/nerds-logo.svg" width="150" height="50" alt="лого">
+    <div class="container">
+      <div class="header-logo">
+        <img src="img/nerds-logo.svg" width="150" height="50" alt="лого">
+      </div>
+      <nav class="main-navigation">
+        <ul class="user-navigation">
+          <li><a href="404.html">Студия</a></li>
+          <li><a href="404.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="404.html">Контакты</a></li>
+        </ul>
+        <ul>
+          <li class="cart"><a href="404.html">Корзина</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="main-navigation">
-      <ul class="user-navigation">
-        <li><a href="404.html">Студия</a></li>
-        <li><a href="404.html">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="404.html">Контакты</a></li>
-      </ul>
-      <ul>
-        <li class="cart"><a href="404.html">Корзина</a></li>
-      </ul>
-    </nav>
   </header>
   <main>
-    <div class="container">
-      <section class="slider">
+
+    <section class="slider">
+      <div class="container">
         <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
         <ul class="slider-list">
           <li class="slider-item">
@@ -53,7 +56,9 @@
           <button class="button-control" type="button"></button>
           <button class="button-control" type="button"></button>
         </div>
-      </section>
+      </div>
+    </section>
+    <div class="container-main">
       <section class="service">
         <h2 class="visually-hidden">Наши услуги</h2>
         <ul class="service-list">
@@ -143,29 +148,31 @@
     </div>
   </main>
   <footer class="page-footer">
-    <section class="footer-social">
-      <h2 class="visually-hidden">Наши соц сети</h2>
-      <ul>
-        <li>
-          <a class="social-button" href="#">Vk</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Face</a>
-        </li>
-        <li>
-          <a class="social-button" href="#">Inst</a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer-text">
-      <h2 class="visually-hidden">Давайте дружить!</h2>
-      <p>Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
-    </section>
+    <div class="container">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Наши соц сети</h2>
+        <ul>
+          <li>
+            <a class="social-button" href="#">Vk</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Face</a>
+          </li>
+          <li>
+            <a class="social-button" href="#">Inst</a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-text">
+        <h2 class="visually-hidden">Давайте дружить!</h2>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
   </footer>
   <section class="popup-contacts">
     <h2>Напишите нам</h2>
-    <form action="#" method="POST" oninput="">
+    <form action="#" method="post" oninput="">
       <div>
         <label for="name-contacts">Ваше имя</label>
         <input type="text" id="name-contacts" name="name" placeholder="Имя Фамилия">
