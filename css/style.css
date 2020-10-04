@@ -364,9 +364,17 @@ img {
 
 .catalog-products-item {
 	border-radius: 3px;
-	background-color: var(--catalog-gray);
+  background-color: var(--light-gray);
+  position: relative;
 }
-
+.catalog-products-item::before{
+  content: url(../img/catalog_1.svg);
+  position: absolute;
+}
+.catalog-products-item:hover::before{
+  content: url(../img/catalog_2.svg);
+  position: absolute;
+}
 .catalog-products-item img {
 	border-radius: 3px;
 }
@@ -400,7 +408,6 @@ img {
 	line-height: 18px;
 	color: var(--catalog-gray);
 }
-
 
 /* Пагинация каталога */
 
