@@ -150,7 +150,11 @@ img {
 /* Секция услуг */
 
 .service-list {
-	list-style: none;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 100px;
+  margin: 80px 0 80px 0;
 }
 
 .service-item div {
@@ -168,7 +172,8 @@ img {
 }
 
 .service-item p {
-	color: var(--dark-gray);
+  color: var(--dark-gray);
+  max-width: 260px;
 }
 
 .button-red {
@@ -226,9 +231,16 @@ img {
 /* Блок Наша студия в Краснодаре */
 
 .about {
-	border-top: 2px solid var(--light-gray);
+  border-top: 2px solid var(--light-gray);
+  display: flex;
+  justify-content: space-between;
+  padding: 39px 0 75px 0;
 }
-
+.about-text{
+  display: flex;
+  flex-direction: column;
+  width: 651px;
+}
 .about-text h2 {
 	font-weight: 500;
 	font-size: 45px;
@@ -257,15 +269,36 @@ img {
 	top: 10px;
 	background-color: var(--basik-red);
 }
-
+.about-skill{
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+}
 .about-skill p:nth-child() {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: var(--basik-black);
 }
-
+.about-skill-list{
+  display: flex;
+  padding: 0;
+}
 .about-skill-item {
-	list-style: none;
+  list-style: none;
+  width: 120px;
+}
+.about-skill-item{
+  position: relative;
+}
+.about-skill-item::after{
+  content: " ";
+  position: absolute;
+  background: url(../img/%.svg);
+  height: 40px;
+  width: 20px;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
 }
 
 .about-skill-item p:nth-child(1) {
@@ -291,7 +324,22 @@ img {
 /* Блок с каротой */
 
 .contacts {
-	background-color: var(--dark-gray);
+  background: url(../img/map-1.jpg);
+  height: 416px;
+  background-repeat: no-repeat;
+}
+.contacts-info{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--basik-white);
+  height: 319px;
+  width: 308px;
+}
+.contacts-info p:first-child{
+  font-weight: bold;
+font-size: 18px;
+line-height: 30px;
+text-transform: uppercase;
 }
 
 
