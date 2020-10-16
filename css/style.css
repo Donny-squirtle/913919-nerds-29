@@ -65,13 +65,21 @@ img {
 
 
 /* Навигация */
-
+.header-navigation-wrapper{
+  display: flex;
+}
 .main-header {
 	background-color: var(--light-gray);
-	color: var(--basik-black);
+  color: var(--basik-black);
 }
-
+.header-container{
+display: flex;
+}
 .main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 	text-transform: uppercase;
 	font-weight: 500;
 	line-height: 30px;
@@ -89,12 +97,21 @@ img {
 	color: var(--shadow-black);
 }
 
-.user-navigation {
-	list-style: none;
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 437px;
+  height: 30px;
 }
-
-.cart {
-	list-style: none;
+.user-navigation{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+.site-navigation li:active{
+  border-bottom: 2px solid var(--basik-red);
 }
 
 
