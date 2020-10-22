@@ -33,22 +33,24 @@
         <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
         <ul class="slider-list">
           <li class="slider-item slide-1 active">
-            <p>Долго, дорого, скрупулезно.</p>
-            <p>Математически выверенный дизайн для вашего сайта или мобильног</p>
+            <p class="slider-item-text-title">Долго, дорого, скрупулезно.</p>
+            <p class="slider-item-text">Математически выверенный дизайн для вашего сайта или мобильногo</p>
             <a class="button button-slider" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item slide-2 none">
-            <p>Любим математика как никто другой</p>
-            <p>Накакого креатива, только математичекские формулу для расчета идеальных пропорций</p>
+          <li class="slider-item slide-2">
+            <p class="slider-item-text">Любим математика как никто другой</p>
+            <p class="slider-item-text">Накакого креатива, только математичекские формулу для расчета идеальных
+              пропорций</p>
             <a class="button button-slider" href="#">Узнать больше</a>
           </li>
-          <li class="slider-item slide-3 none">
-            <p>Только ночь, только хардкор</p>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
+          <li class="slider-item slide-3">
+            <p class="slider-item-text">Только ночь, только хардкор</p>
+            <p class="slider-item-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+              начинается</p>
             <a class="button button-slider" href="#">Узнать больше</a>
           </li>
         </ul>
-        <div>
+        <div class="button-control-list">
           <!-- Кнопки для слайдера -->
           <button class="button-control" type="button"></button>
           <button class="button-control" type="button"></button>
@@ -83,7 +85,7 @@
       </div>
     </section>
     <section class="about">
-      <div class="container">
+      <div class="container about-container">
         <h2 class="visually-hidden">Наша студия в Краснодаре</h2>
         <div class="about-text">
           <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
@@ -97,7 +99,7 @@
         </div>
         <div class="about-skill">
           <div><img src="img/nerds-illustration_1.png" width="360" height="208" alt="лого"></div>
-          <p>с 2004 года любм точность во всем:</p>
+          <p class="about-skill-title">с 2004 года любм точность во всем:</p>
           <ul class="about-skill-list">
             <li class="about-skill-item">
               <p>146</p>
@@ -115,25 +117,30 @@
         </div>
       </div>
     </section>
-    <section class="examples container">
-      <h2 class="visually-hidden">Наши работы</h2>
-      <ul class="examples-list">
-        <li class="examples-item">
-          <a href="#"><img src="img/logo-1_1.png" width="200" height="68" alt="html академия"></a>
-        </li>
-        <li class="examples-item">
-          <a href="#"><img src="img/logo-2_1.png" width="209" height="90" alt="Барбершоп dorodinski"></a>
-        </li>
-        <li class="examples-item">
-          <a href="#"><img src="img/logo-3_1.png" width="185" height="152" alt="pink"></a>
-        </li>
-        <li class="examples-item">
-          <a href="#"><img src="img/logo-4_1.png" width="173" height="184" alt="mishka"></a>
-        </li>
-      </ul>
+    <section class="examples">
+      <div class="container examples-container">
+        <h2 class="visually-hidden">Наши работы</h2>
+        <ul class="examples-list">
+          <li class="examples-item">
+            <a href="#"><img src="img/logo-1_1.png" width="200" height="68" alt="html академия"></a>
+          </li>
+          <li class="examples-item">
+            <a href="#"><img src="img/logo-2_1.png" width="209" height="90" alt="Барбершоп dorodinski"></a>
+          </li>
+          <li class="examples-item">
+            <a href="#"><img src="img/logo-3_1.png" width="185" height="152" alt="pink"></a>
+          </li>
+          <li class="examples-item">
+            <a href="#"><img src="img/logo-4_1.png" width="173" height="184" alt="mishka"></a>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="contacts">
-      <div class="container-contacts">
+      <!-- <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab9401e1fba0efd6740e52c75ec814835815237f1b56e4596e8479b0289cc1f89&amp;source=constructor"
+        width="1280" height="416" frameborder="0"></iframe> -->
+      <div class="container container-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts-maps">
           <!-- Тут карта -->
@@ -152,7 +159,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer-container container">
       <section class="footer-social">
         <h2 class="visually-hidden">Наши соц сети</h2>
         <ul class="social-list">
@@ -187,7 +194,7 @@
       </section>
     </div>
   </footer>
-  <section class="popup-contacts">
+  <section class="popup-contacts visually-hidden">
     <h2>Напишите нам</h2>
     <form action="#" method="post" oninput="">
       <div>

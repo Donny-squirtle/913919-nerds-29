@@ -159,20 +159,29 @@ display: flex;
 	background-color: var(--dark-red);
 	color: var(--shadow-white)
 }
-
+.button-control-list{
+  position: absolute;
+  height: 18px;
+  left: 560px;
+  top: 502px;
+}
 .button-control {
 	width: 18px;
 	height: 18px;
 	border-radius: 50%;
 	background-color: var(--basik-white);
-	border: 0px;
+  border: 0px;
+  margin-right: 8px;
 }
 
 .slide-1 {
-	background-image:  url(../img/nerds-index-slide1_1.png);
+  background-image: url(../img/nerds-index-slide1_1.png);
+  background-repeat: no-repeat;
+  background-position: 90%;
 }
 
 .slider-list {
+  position: relative;
   list-style: none;
   margin: 0;
   padding: 75px 0 0 0;
@@ -182,8 +191,14 @@ display: flex;
   width: 100%;
   height: 431px;
 }
+.slider-item-text-title{
+  width: 538px;
+}
+.slider-item-text{
+  width: 400px;
+}
 .slider-item p{
-  margin: 0;
+  margin: 0 0 25px 0;
 }
 .slider-item p:nth-child(1) {
 	font-size: 55px;
@@ -191,10 +206,12 @@ display: flex;
 	color: var(--basik-black);
 	font-weight: 500;
 }
-.none{
+.slider-item{
   display: none;
 }
-
+.slider-item.active{
+  display: block;
+}
 /* Секция услуг */
 
 .service-list {
@@ -203,6 +220,7 @@ display: flex;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 100px;
   margin: 80px 0 80px 0;
+  padding: 0;
 }
 .service-item{
   width: 300px;
@@ -274,13 +292,16 @@ display: flex;
 
 /* Блок Наша студия в Краснодаре */
 
-.about .container{
+.about-container{
   border-top: 2px solid var(--light-gray);
   padding: 39px 0 75px 0;
 }
 .about .container{
   display: flex;
   justify-content: space-between;
+}
+.about-skill-title{
+  font-weight: bold;
 }
 .about-text{
   display: flex;
@@ -364,14 +385,13 @@ display: flex;
 
 /* Блок Наши работы */
 
-.examples {
+.examples-container{
   display: flex;
   align-items: center;
 	border-top: 2px solid var(--light-gray);
   border-bottom: 2px solid var(--light-gray);
   height: 180px;
 }
-
 .examples-list {
   list-style: none;
   display: flex;
@@ -396,19 +416,14 @@ opacity: 1;
 
 
 /* Блок с каротой */
-.contacts{
-  margin-top: 80px;
-  padding-bottom: 70px;
-}
 .container-contacts {
   display: flex;
   align-items: center;
   background: url(../img/map-1.jpg);
   height: 416px;
   background-repeat: no-repeat;
-  width: 1440px;
-	padding: 0 20px;
-	margin: 0 auto;
+  margin-top: 80px;
+  padding-bottom: 70px;
 }
 .contacts-info{
   display: flex;
@@ -431,7 +446,7 @@ text-transform: uppercase;
 }
 
 /* Футер */
-.page-footer .container{
+.page-footer-container{
   display: flex;
   padding-bottom: 70px;
 }
@@ -448,7 +463,7 @@ text-transform: uppercase;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 120px 0 0;
 }
 .social-list li{
   margin-right: 9px;
