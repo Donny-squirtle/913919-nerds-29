@@ -18,7 +18,10 @@
 	--shadow-black: rgba(0, 0, 0, 0.3);
 	--shadow-white: rgba(255, 255, 255, 0.3);
 	--catalog-gray: #666666;
-	--catalog-light-gray: #DBDBDB;
+  --catalog-light-gray: #DBDBDB;
+  --catalog-filter-gray:#D7DCDF;
+  --catalog-filter-green: #00CA74;
+  --catalog-filter-toggle-gray:#ABABAB;
 }
 
 .container {
@@ -517,7 +520,7 @@ text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 88px;
+  margin-bottom: 60px;
 }
 .catalog-filter p {
   margin: 0;
@@ -548,15 +551,145 @@ text-transform: uppercase;
 	color: var(--basik-black);
 }
 /* Фильтр каталога */
+.catalog-filter-main ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 .catalog-filter-left{
   width: 260px;
   height: 780px;
 }
+.catalog-filter-main fieldset{
+  border: 0 none;
+  margin: 15px 0 50px 0;
+  padding: 0;
+  }
+  .catalog-filter-main_title{
+    margin-bottom: 14px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basik-black);
+  }
+  .catalog-filter-main_price .catalog-filter-main_title{
+  margin-bottom: 48px;
+  }
+  .range-controls{
+    position: relative;
+    background-color: var(--light-gray);
+    padding: 39px 22px 39px 33px;
+    margin-bottom: 14px;
+    border-radius: 3px;
+  }
+  .range-controls .scale{
+    height: 2px;
+    background-color: var(--catalog-filter-gray);
+  }
+  .range-controls .bar{
+    height: 2px;
+    background-color: var(--catalog-filter-green);
+    width: 70%;
+  }
+  .range-controls .toggle{
+    position: absolute;
+    top: 31px;
+    left: 0;
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    border: 8px solid var(--basik-white);
+    background-color: var(--catalog-filter-toggle-gray);
+    border-radius: 50%;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+  }
+  .range-controls .toggle-min{
+    left: 18px;
+  }
+  .range-controls .toggle-max{
+    left: 160px;
+  }
+  .price-controls{
+    display: flex;
+    justify-content: space-between;
+  }
+  .price-controls input{
+    width: 60px;
+    padding: 10px;
+    margin-left: 10px;
+    text-align: center;
+    color: var(--dark-gray);
+    border: none;
+    border-radius: 3px;
+    background-color: var(--light-gray);
+    font-family: inherit;
+    font-size: inherit;
+  }
+  .catalog-filter-option{
+    margin-bottom: 17px;
+    padding-left: 36px;
+  }
+  .catalog-filter-option label{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+  }
+  .catalog-filter-checkbox + label::before{
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(../img/checkbox-off.svg);
+    position: absolute;
+    left: -35px;
+    top: 0;
+    width: 23px;
+    height: 23px;
+  }
+  .catalog-filter-checkbox:checked + label::before{
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(../img/checkbox-on.svg);
+    position: absolute;
+    left: -35px;
+    top: 0;
+    width: 26px;
+    height: 26px;
+  }
+  .catalog-filter-radio + label::before{
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(../img/radio-off.svg);
+    position: absolute;
+    left: -35px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+  }
+  .catalog-filter-radio:checked + label::before{
+    content: "";
+    background-repeat: no-repeat;
+    background-image: url(../img/radio-on.svg);
+    position: absolute;
+    left: -35px;
+    top: 0;
+    width: 25px;
+    height: 25px;
+  }
+  .button-filter{
+    width: 260px;
+    height: 50px;
+    background-color: var(--light-gray);
+    border-radius: 3px;
+    border: 0;
+    font-size: inherit;
+    text-transform: uppercase;
+    font-family: inherit;
+    font-weight: 500;
+    color: var(--basik-black);
+  }
 /* Карточки каталога  */
-.item_mask-container{
-  padding: 26px 60px;
-  text-align: center;
-}
 .catalog-products-list {
   margin: 0;
   padding: 0;
@@ -593,6 +726,7 @@ text-transform: uppercase;
   display: none;
   background-color: var(--light-gray);
   border-radius: 0px 0px 3px 3px;
+  text-align: center;
   width: 360px;
   height: 231px;
   top: 350px;
@@ -610,28 +744,26 @@ box-shadow: 0px 3px 14px 3px rgba(0,0,0,0.3);
  display: block;
 }
 
-.catalog-products-item_mask a:first-child {
+.catalog-products-item_mask_title {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 18px;
   line-height: 30px;
-  margin-top: 26px;
 	color: var(--basik-black);
 }
-
-.catalog-products-item_mask a:first-child:hover {
+.catalog-products-item_mask_title:hover {
 	color: var(--basik-red);
 }
 
-.catalog-products-item_mask a:first-child:active {
+.catalog-products-item_mask_title:active {
 	color: var(--shadow-black);
 }
 
 .catalog-products-item_mask p {
-  margin:12px 0 32px 0;
 	font-size: 16px;
 	line-height: 18px;
-	color: var(--catalog-gray);
+  color: var(--catalog-gray);
+  padding: 12px 60px 32px;
 }
 .button-mask{
   background-color: var(--basik-red);
@@ -642,6 +774,7 @@ box-shadow: 0px 3px 14px 3px rgba(0,0,0,0.3);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
 }
 .button-mask:hover{
   background-color: var(--light-red);
@@ -649,9 +782,12 @@ box-shadow: 0px 3px 14px 3px rgba(0,0,0,0.3);
 .button-mask:active{
   background-color: var(--dark-red);
 }
+
 /* Пагинация каталога */
 
 .catalog-pagination {
+  margin-top: 54px;
+  padding: 0;
   display: flex;
   justify-content: flex-start;
 	list-style: none;
@@ -660,16 +796,32 @@ box-shadow: 0px 3px 14px 3px rgba(0,0,0,0.3);
 	line-height: 18px;
 	text-transform: uppercase;
 }
-.catalog-pagination-item{
+.catalog-pagination-item a{
   margin-right: 11px;
 }
+.catalog-pagination-item:last-child a{
+width: 260px;
+height: 50px;
+}
 .catalog-pagination-item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
 	background: var(--light-gray);
 	border-radius: 3px;
 	color: var(--basik-black);
 }
 
 .catalog-pagination-item a:active {
-	border: 3px solid var(--catalog-light-gray);
+  width: 45px;
+  height: 45px;
+  border: 3px solid var(--catalog-light-gray);
+  background-color: var(--basik-white);
 	border-radius: 3px;
 }
+.catalog-pagination-item:last-child a:active{
+  width: 256px;
+  height: 46px;
+  }

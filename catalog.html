@@ -37,32 +37,68 @@
         <h2 class="visually-hidden">Наши предложения</h2>
         <section class="catalog-filter-left">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form>
-            <fieldset>
-              <legend>стоимось:</legend>
-              <input type="range" min="0" max="15000" step="1">
+          <form method="get" class="catalog-filter-main">
+            <fieldset class="catalog-filter-main_price">
+              <legend class="catalog-filter-main_title">стоимось:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                  </label>
+                </div>
+              </div>
             </fieldset>
-            <fieldset>
-              <legend>сетка:</legend>
-              <input type="radio" id="adaptive" checked>
-              <label for="adaptive">Адаптивная</label>
-              <input type="radio" id="fixed">
-              <label for="fixed">Фиксированная</label>
-              <input type="radio" id="rubber">
-              <label for="rubber">Резиновая</label>
+            <fieldset class="catalog-filter-main_grid">
+              <legend class="catalog-filter-main_title">сетка:</legend>
+              <ul>
+                <li class="catalog-filter-option filter-radio">
+                  <input class="visually-hidden catalog-filter-radio" name="grid" type="radio" id="adaptive" checked>
+                  <label for="adaptive">Адаптивная</label>
+                </li>
+                <li class="catalog-filter-option filter-radio">
+                  <input class="visually-hidden catalog-filter-radio" name="grid" type="radio" id="fixed">
+                  <label for="fixed">Фиксированная</label>
+                </li>
+                <li class="catalog-filter-option filter-radio">
+                  <input class="visually-hidden catalog-filter-radio" name="grid" type="radio" id="rubber">
+                  <label for="rubber">Резиновая</label>
+                </li>
+              </ul>
             </fieldset>
-            <fieldset>
-              <legend>особенности:</legend>
-              <input type="checkbox" id="slide" checked>
-              <label for="slide">Слайдер</label>
-              <input type="checkbox" id="advantege">
-              <label for="advantage">Блок преимуществ</label>
-              <input type="checkbox" id="news" checked>
-              <label for="news">Новости</label>
-              <input type="checkbox" id="galery">
-              <label for="galery">Галерея</label>
-              <input type="checkbox" id="cart">
-              <label for="cart">Корзина</label>
+            <fieldset class="catalog-filter-main_features">
+              <legend class="catalog-filter-main_title">особенности:</legend>
+              <ul>
+                <li class="catalog-filter-option filter-checkbox">
+                  <input class="visually-hidden catalog-filter-checkbox" type="checkbox" id="slide" checked>
+                  <label for="slide">Слайдер</label>
+                </li>
+                <li class="catalog-filter-option filter-checkbox">
+                  <input class="visually-hidden catalog-filter-checkbox" type="checkbox" id="advantege">
+                  <label for="advantege">Блок преимуществ</label>
+                </li>
+                <li class="catalog-filter-option filter-checkbox">
+                  <input class="visually-hidden catalog-filter-checkbox" type="checkbox" id="news" checked>
+                  <label for="news">Новости</label>
+                </li>
+                <li class="catalog-filter-option filter-checkbox">
+                  <input class="visually-hidden catalog-filter-checkbox" type="checkbox" id="galery">
+                  <label for="galery">Галерея</label>
+                </li>
+                <li class="catalog-filter-option filter-checkbox">
+                  <input class="visually-hidden catalog-filter-checkbox" type="checkbox" id="cart">
+                  <label for="cart">Корзина</label>
+                </li>
+              </ul>
             </fieldset>
           </form>
           <button class="button-filter" type="button">Показать</button>
@@ -91,11 +127,9 @@
                   <img src="img/img-sedona_1.jpg" width="360" height="580" alt="sedona">
                 </div>
                 <div class="catalog-products-item_mask">
-                  <div class="item_mask-container">
-                    <a href="#">sedona</a>
-                    <p>Информационный сайт для туристов</p>
-                    <a class="button-mask" href="#">9 900 <span>рубль</span></a>
-                  </div>
+                  <a class="catalog-products-item_mask_title" href="#">sedona</a>
+                  <p>Информационный сайт для туристов</p>
+                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
                 </div>
               </li>
               <li class="catalog-products-item">
@@ -103,11 +137,10 @@
                   <img src="img/img-pink_1.jpg" width="360" height="580" alt="pink app">
                 </div>
                 <div class="catalog-products-item_mask">
-                  <div class="item_mask-container">
-                    <a href="#">pink app</a>
-                    <p>Продуктивный лендинг прилоения на iOS и Android</p>
-                    <a class="button-mask" href="#">9 900 <span>рубль</span></a>
-                  </div>
+                  <a class="catalog-products-item_mask_title" href="#">pink app</a>
+                  <p>Продуктивный лендинг прилоения на iOS и Android</p>
+                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
+
                 </div>
               </li>
               <li class="catalog-products-item">
@@ -115,11 +148,9 @@
                   <img src="img/img-barbershop_1.jpg" width="360" height="580" alt="barbershop">
                 </div>
                 <div class="catalog-products-item_mask">
-                  <div class="item_mask-container">
-                    <a href="#">barbershop</a>
-                    <p>Сайт салона красоты. Для мужчин, да.</p>
-                    <a class="button-mask" href="#">9 900 <span>рубль</span></a>
-                  </div>
+                  <a class="catalog-products-item_mask_title" href="#">barbershop</a>
+                  <p>Сайт салона красоты. Для мужчин, да.</p>
+                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
                 </div>
               </li>
               <li class="catalog-products-item">
@@ -127,11 +158,9 @@
                   <img src="img/img-mishka_1.jpg" width="360" height="580" alt="mishka">
                 </div>
                 <div class="catalog-products-item_mask">
-                  <div class="item_mask-container">
-                    <a href="#">mishka</a>
-                    <p>Интернет-магазин, вязаных игрушек</p>
-                    <a class="button-mask" href="#">9 900 <span>рубль</span></a>
-                  </div>
+                  <a class="catalog-products-item_mask_title" href="#">mishka</a>
+                  <p>Интернет-магазин, вязаных игрушек</p>
+                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
                 </div>
               </li>
               <li class="catalog-products-item">
@@ -139,11 +168,9 @@
                   <img src="img/img-aplus_1.jpg" width="360" height="580" alt="a plus">
                 </div>
                 <div class="catalog-products-item_mask">
-                  <div class="item_mask-container">
-                    <a href="#">a plus</a>
-                    <p>Лендинг курсво повышения квалификации</p>
-                    <a class="button-mask" href="#">9 900 <span>рубль</span></a>
-                  </div>
+                  <a class="catalog-products-item_mask_title" href="#">a plus</a>
+                  <p>Лендинг курсво повышения квалификации</p>
+                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
                 </div>
               </li>
               <li class="catalog-products-item">
@@ -151,11 +178,9 @@
                   <img src="img/img-kvast_1.jpg" width="360" height="580" alt="кваст">
                 </div>
                 <div class="catalog-products-item_mask">
-                  <div class="item_mask-container">
-                    <a href="#">кваст</a>
-                    <p>Промо-сайт производителя кравфтового кваса</p>
-                    <a class="button-mask" href="#">9 900 <span>рубль</span></a>
-                  </div>
+                  <a class="catalog-products-item_mask_title" href="#">кваст</a>
+                  <p>Промо-сайт производителя кравфтового кваса</p>
+                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
                 </div>
               </li>
             </ul>
