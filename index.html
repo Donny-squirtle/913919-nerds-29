@@ -137,23 +137,20 @@
       </div>
     </section>
     <section class="contacts">
-      <!-- <iframe
-        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab9401e1fba0efd6740e52c75ec814835815237f1b56e4596e8479b0289cc1f89&amp;source=constructor"
-        width="1280" height="416" frameborder="0"></iframe> -->
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5772364aff8652149481db71923195f91fdd47f5d28d2a982af5074bfd1ae488&amp;width=100%&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
       <div class="container container-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="contacts-maps">
-          <!-- Тут карта -->
         </div>
         <div class="contacts-info">
           <p>nёrds design studio</p>
-          <address>
+          <address class="contacts-info-adress">
             191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </address>
-          <p>
+          <p calss="contacts-info-phone">
             тел. <a href="tel:+78122757575">+7(812) 275-75-75</a>
           </p>
-          <a href="#" class="button button-contacts">Напишите нам</a>
+          <a href="" class="button button-contacts">Напишите нам</a>
         </div>
       </div>
     </section>
@@ -194,25 +191,26 @@
       </section>
     </div>
   </footer>
-  <section class="popup-contacts visually-hidden">
-    <h2>Напишите нам</h2>
-    <form action="#" method="post" oninput="">
-      <div>
+  <section class="popup-contacts">
+    <button class="popup-contacts-close" type="button">Закрыть</button>
+    <h2 class="popup-contacts-title">Напишите нам</h2>
+    <form class="popup-form" action="#" method="post" oninput="">
+      <div class="popup-text">
         <label for="name-contacts">Ваше имя</label>
-        <input type="text" id="name-contacts" name="name" placeholder="Имя Фамилия">
+        <input class="popup-contacts-area" type="text" id="name-contacts" name="name" placeholder="Имя Фамилия">
       </div>
-      <div>
+      <div class="popup-text">
         <label for="e-mail-contacts">Ваше e-mail</label>
-        <input type="text" id="e-mail-contacts" name="e-mail" placeholder="e-mail@example.com">
+        <input class="popup-contacts-area" type="text" id="e-mail-contacts" name="e-mail" placeholder="e-mail@example.com">
       </div>
-      <div>
+      <div class="popup-text-contacts">
         <label for="text-contacts">Текст письма</label>
-        <textarea name="letter-text" id="text-contacts">В свободной форме</textarea>
+        <textarea class="popup-contacts-area" rows="4" name="letter-text" id="text-contacts">В свободной форме</textarea>
       </div>
-      <input type="submit" value="Отправить">
     </form>
-    <!-- Тут форма связи-->
+    <button class="popup-contacts-button"type="submit">Отправить</button>
   </section>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
