@@ -11,14 +11,14 @@
 <body class="page-body">
   <header class="main-header">
     <div class="container header-container">
-      <div class="header-logo">
+      <a href="index.html" class="header-logo">
         <img src="img/nerds-logo.svg" width="160" height="66" alt="лого">
-      </div>
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="404.html">Студия</a></li>
           <li><a href="404.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
+          <li><a class="nav-active" href="catalog.html">Магазин</a></li>
           <li><a href="404.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -109,7 +109,7 @@
             <p>сортировать:</p>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <button type="button">по цене</button>
+                <button class="button-filter-active" type="button">по цене</button>
               </li>
               <li class="catalog-filter-item">
                 <button type="button">по типу</button>
@@ -118,18 +118,26 @@
                 <button type="button">по названию</button>
               </li>
             </ul>
+            <ul class="catalog-toggle-list">
+              <li class="catalog-toggle-item">
+                <a class="catalog-toggle-item_up catalog-toggle-active" href=""></a>
+              </li>
+              <li class="catalog-toggle-item">
+                <a class="catalog-toggle-item_down" href=""></a>
+              </li>
+              </ul>
           </section>
           <section class="catalog-products">
             <h2 class="visually-hidden">Наши товары</h2>
             <ul class="catalog-products-list">
-              <li class="catalog-products-item">
+              <li class="catalog-products-item catalog-products-item-active">
                 <div>
                   <img src="img/img-sedona_1.jpg" width="360" height="580" alt="sedona">
                 </div>
                 <div class="catalog-products-item_mask">
                   <a class="catalog-products-item_mask_title" href="#">sedona</a>
                   <p>Информационный сайт для туристов</p>
-                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
+                  <a class="button-mask" href="#">9 900&nbsp;<span>₽</span></a>
                 </div>
               </li>
               <li class="catalog-products-item">
@@ -139,7 +147,7 @@
                 <div class="catalog-products-item_mask">
                   <a class="catalog-products-item_mask_title" href="#">pink app</a>
                   <p>Продуктивный лендинг прилоения на iOS и Android</p>
-                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
+                  <a class="button-mask" href="#">9 900&nbsp;<span>₽</span></a>
 
                 </div>
               </li>
@@ -150,7 +158,7 @@
                 <div class="catalog-products-item_mask">
                   <a class="catalog-products-item_mask_title" href="#">barbershop</a>
                   <p>Сайт салона красоты. Для мужчин, да.</p>
-                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
+                  <a class="button-mask" href="#">9 900&nbsp;<span>₽</span></a>
                 </div>
               </li>
               <li class="catalog-products-item">
@@ -160,7 +168,7 @@
                 <div class="catalog-products-item_mask">
                   <a class="catalog-products-item_mask_title" href="#">mishka</a>
                   <p>Интернет-магазин, вязаных игрушек</p>
-                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
+                  <a class="button-mask" href="#">9 900&nbsp;<span>₽</span></a>
                 </div>
               </li>
               <li class="catalog-products-item">
@@ -170,7 +178,7 @@
                 <div class="catalog-products-item_mask">
                   <a class="catalog-products-item_mask_title" href="#">a plus</a>
                   <p>Лендинг курсво повышения квалификации</p>
-                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
+                  <a class="button-mask" href="#">9 900&nbsp;<span> ₽</span></a>
                 </div>
               </li>
               <li class="catalog-products-item">
@@ -180,12 +188,12 @@
                 <div class="catalog-products-item_mask">
                   <a class="catalog-products-item_mask_title" href="#">кваст</a>
                   <p>Промо-сайт производителя кравфтового кваса</p>
-                  <a class="button-mask" href="#">9 900 <span>рубль</span></a>
+                  <a class="button-mask" href="#">9 900 <span>₽</span></a>
                 </div>
               </li>
             </ul>
             <ul class="catalog-pagination">
-              <li class="catalog-pagination-item"><a href="#">1</a></li>
+              <li class="catalog-pagination-item catalog-pagination-item__active"><a href="#">1</a></li>
               <li class="catalog-pagination-item"><a href="#">2</a></li>
               <li class="catalog-pagination-item"><a href="#">3</a></li>
               <li class="catalog-pagination-item"><a href="#">следующая</a></li>

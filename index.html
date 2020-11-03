@@ -11,9 +11,9 @@
 <body class="page-body">
   <header class="main-header">
     <div class="container header-container">
-      <div class="header-logo">
+      <a class="header-logo">
         <img src="img/nerds-logo.svg" width="160" height="66" alt="лого">
-      </div>
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="404.html">Студия</a></li>
@@ -38,13 +38,13 @@
             <a class="button button-slider" href="#">Узнать больше</a>
           </li>
           <li class="slider-item slide-2">
-            <p class="slider-item-text">Любим математика как никто другой</p>
+            <p class="slider-item-text-title">Любим математику как никто другой</p>
             <p class="slider-item-text">Накакого креатива, только математичекские формулу для расчета идеальных
               пропорций</p>
             <a class="button button-slider" href="#">Узнать больше</a>
           </li>
           <li class="slider-item slide-3">
-            <p class="slider-item-text">Только ночь, только хардкор</p>
+            <p class="slider-item-text-title">Только ночь, только хардкор</p>
             <p class="slider-item-text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
               начинается</p>
             <a class="button button-slider" href="#">Узнать больше</a>
@@ -52,9 +52,9 @@
         </ul>
         <div class="button-control-list">
           <!-- Кнопки для слайдера -->
-          <button class="button-control" type="button"></button>
-          <button class="button-control" type="button"></button>
-          <button class="button-control" type="button"></button>
+          <button class="button-control first active" type="button"></button>
+          <button class="button-control second" type="button"></button>
+          <button class="button-control third" type="button"></button>
         </div>
       </div>
     </section>
@@ -102,15 +102,15 @@
           <p class="about-skill-title">с 2004 года любм точность во всем:</p>
           <ul class="about-skill-list">
             <li class="about-skill-item">
-              <p>146</p>
+              <p>146<span></span></p>
               <p>Уровень самоотдачи</p>
             </li>
             <li class="about-skill-item">
-              <p>100</p>
+              <p>100<span></span></p>
               <p>Соблюдение сроков</p>
             </li>
             <li class="about-skill-item">
-              <p>50</p>
+              <p>50<span></span></p>
               <p>Минимальная предоплата</p>
             </li>
           </ul>
@@ -137,17 +137,15 @@
       </div>
     </section>
     <section class="contacts">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5772364aff8652149481db71923195f91fdd47f5d28d2a982af5074bfd1ae488&amp;width=100%&amp;height=416&amp;lang=ru_RU&amp;scroll=true"></script>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5772364aff8652149481db71923195f91fdd47f5d28d2a982af5074bfd1ae488&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
       <div class="container container-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <div class="contacts-maps">
-        </div>
         <div class="contacts-info">
           <p>nёrds design studio</p>
           <address class="contacts-info-adress">
             191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </address>
-          <p calss="contacts-info-phone">
+          <p class="contacts-info-phone">
             тел. <a href="tel:+78122757575">+7(812) 275-75-75</a>
           </p>
           <a href="" class="button button-contacts">Напишите нам</a>
