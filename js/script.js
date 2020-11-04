@@ -10,25 +10,25 @@ const sliderButtonSecond = slider.querySelector(".second");
 const sliderButtonThird = slider.querySelector(".third");
 
 /*Eto popup*/
-link.addEventListener("click", function (evt) {
+link.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.add("popup-contacts_show");
 });
 
-contacts_close.addEventListener("click", function(evt){
+contacts_close.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup.classList.remove("popup-contacts_show");
 });
-window.addEventListener("keydown", function(evt){
-    if(evt.keyCode === 27){
-        if( popup.classList.contains("popup-contacts_show")){
+window.addEventListener("keydown", function(evt) {
+    if (evt.keyCode === 27) {
+        if (popup.classList.contains("popup-contacts_show")) {
             evt.preventDefault();
             popup.classList.remove("popup-contacts_show");
         }
     }
 });
 /*Eto slider*/
-sliderButtonFirst.addEventListener("click", function(evt){
+sliderButtonFirst.addEventListener("click", function(evt) {
     evt.preventDefault();
     sliderFirst.classList.add("active");
     sliderSecond.classList.remove("active");
@@ -37,7 +37,7 @@ sliderButtonFirst.addEventListener("click", function(evt){
     sliderButtonSecond.classList.remove("active");
     sliderButtonThird.classList.remove("active");
 });
-sliderButtonSecond.addEventListener("click", function(evt){
+sliderButtonSecond.addEventListener("click", function(evt) {
     evt.preventDefault();
     sliderSecond.classList.add("active");
     sliderFirst.classList.remove("active");
@@ -46,7 +46,7 @@ sliderButtonSecond.addEventListener("click", function(evt){
     sliderButtonFirst.classList.remove("active");
     sliderButtonThird.classList.remove("active");
 });
-sliderButtonThird.addEventListener("click", function(evt){
+sliderButtonThird.addEventListener("click", function(evt) {
     evt.preventDefault();
     sliderThird.classList.add("active");
     sliderFirst.classList.remove("active");
