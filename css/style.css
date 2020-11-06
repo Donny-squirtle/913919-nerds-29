@@ -897,6 +897,16 @@ p {
     color: var(--basik-black);
 }
 
+.button-filter:active {
+    background: var(--catalog-pagination-gray);
+    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    color: var(--shadow-black);
+}
+
+.button-filter:hover {
+    background-color: var(--basik-gray);
+}
+
 
 /* Карточки каталога  */
 
