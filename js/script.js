@@ -11,6 +11,7 @@ const sliderButtonThird = slider.querySelector(".third");
 
 /*Eto popup*/
 link.addEventListener("click", function(evt) {
+    console.log("12313131")
     evt.preventDefault();
     popup.classList.add("popup-contacts_show");
 });
