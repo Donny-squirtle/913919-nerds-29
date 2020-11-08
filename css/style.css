@@ -190,11 +190,12 @@ a.header-logo:active {
 }
 
 .button-control-list {
-    position: absolute;
+    position: relative;
     height: 18px;
-    left: 50%;
-    top: 47%;
+    left: 51%;
+    width: 100px;
     transform: translateX(-50%);
+    bottom: 110px;
 }
 
 .button-control {
