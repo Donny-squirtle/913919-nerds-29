@@ -673,7 +673,6 @@ li.examples-item:not(:last-child)::after {
 
 .social-button:active {
     background-color: var(--dark-red);
-    background: linear-gradient(0deg, var(--dark-red), var(--dark-red)), var(--light-gray);
     box-shadow: inset 0px 3px 0px var(--shadow-text);
     box-sizing: border-box;
 }
