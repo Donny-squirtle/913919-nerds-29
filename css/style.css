@@ -179,6 +179,12 @@ a.header-logo:active {
     font-weight: 500;
 }
 
+.button:active {
+    box-sizing: border-box;
+    box-shadow: inset 0px 3px 0px var(--shadow-text);
+    border-radius: 3px;
+}
+
 .button-slider {
     width: 240px;
     height: 50px;
