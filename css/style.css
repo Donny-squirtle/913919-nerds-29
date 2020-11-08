@@ -1089,6 +1089,9 @@ li.examples-item:not(:last-child)::after {
 
 .button-mask:active {
     background-color: var(--dark-red);
+    box-shadow: inset 0px 3px 0px var(--shadow-text);
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
 
@@ -1126,28 +1129,29 @@ li.examples-item:not(:last-child)::after {
     color: var(--basik-black);
 }
 
-.catalog-pagination-item a:focus {
+.catalog-pagination-item a:active {
     background: var(--catalog-pagination-gray);
     box-shadow: inset 0px 3px 0px var(--shadow-text);
     border-radius: 3px;
     color: var(--shadow-black);
 }
 
-.catalog-pagination-item a:active {
+
+/* .catalog-pagination-item a:active {
     width: 44px;
     height: 44px;
     border: 3px solid var(--catalog-light-gray);
     background-color: var(--basik-white);
     border-radius: 3px;
-}
+} */
 
 .catalog-pagination-item a:hover {
     background-color: var(--basik-gray);
 }
 
 .catalog-pagination-item:last-child a:active {
-    width: 254px;
-    height: 44px;
+    width: 260px;
+    height: 50px;
 }
 
 
@@ -1305,11 +1309,11 @@ textarea.popup-contacts-area {
     border: 2px solid var(--basik-black);
 }
 
-.popup-contacts-area:invalid {
+.popup-contacts-area.invalid {
     border: 2px solid var(--light-red);
 }
 
-.popup-contacts-area:invalid::placeholder {
+.popup-contacts-area.invalid::placeholder {
     color: var(--light-red);
 }
 
