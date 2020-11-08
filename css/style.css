@@ -197,7 +197,7 @@ a.header-logo:active {
 
 .button-slider:active {
     background-color: var(--dark-red);
-    color: var(--shadow-white)
+    color: var(--shadow-white);
 }
 
 .button-control-list {
@@ -621,6 +621,7 @@ li.examples-item:not(:last-child)::after {
 
 .button-contacts:active {
     background-color: var(--dark-red);
+    color: var(--shadow-white);
 }
 
 
@@ -1265,6 +1266,7 @@ li.examples-item:not(:last-child)::after {
 
 .popup-contacts-button:active {
     background-color: var(--dark-red);
+    color: var(--shadow-white);
 }
 
 .popup-form {
