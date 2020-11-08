@@ -149,6 +149,7 @@ a.header-logo:active {
 
 .site-navigation li:active {
     border-bottom: 2px solid var(--basik-red);
+    height: 37px;
 }
 
 
@@ -665,9 +666,12 @@ li.examples-item:not(:last-child)::after {
 
 .social-button:active {
     background-color: var(--dark-red);
+    background: linear-gradient(0deg, var(--dark-red), var(--dark-red)), var(--light-gray);
+    box-shadow: inset 0px 3px 0px var(--shadow-text);
+    box-sizing: border-box;
 }
 
-.social-button svg:active {
+.social-button:active svg {
     opacity: .3;
 }
 
@@ -1330,25 +1334,6 @@ textarea.popup-contacts-area {
 .nav-active {
     padding-bottom: 13px;
     border-bottom: 2px solid var(--basik-red);
-}
-
-
-/*Карточка*/
-
-.catalog-products-item-active {
-    -webkit-box-shadow: 0px 3px 14px 3px var(--shadow-black);
-    -moz-box-shadow: 0px 3px 14px 3px var(--shadow-black);
-    box-shadow: 0px 3px 14px 3px var(--shadow-black);
-}
-
-.catalog-products-item-active .catalog-products-item_mask {
-    display: block;
-}
-
-.catalog-products-item-active::before {
-    content: url(../img/catalog_2.svg);
-    position: absolute;
-    top: 0;
 }
 
 
