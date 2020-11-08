@@ -79,6 +79,7 @@ a {
 
 .header-logo {
     margin-right: 202px;
+    cursor: pointer;
 }
 
 a.header-logo:active {
@@ -191,7 +192,7 @@ a.header-logo:active {
 .button-control-list {
     position: absolute;
     height: 18px;
-    left: 49%;
+    left: 50%;
     top: 47%;
     transform: translateX(-50%);
 }
@@ -203,6 +204,7 @@ a.header-logo:active {
     background-color: var(--basik-white);
     border: 0px;
     margin-right: 8px;
+    cursor: pointer;
 }
 
 .slide-1 {
@@ -438,11 +440,12 @@ a.header-logo:active {
     width: 360px;
 }
 
-.about-skill p {
+
+/* .about-skill p {
     font-weight: bold;
     text-transform: uppercase;
     color: var(--basik-black);
-}
+} */
 
 .about-skill-list {
     display: flex;
@@ -455,7 +458,7 @@ a.header-logo:active {
     width: 120px;
 }
 
-.about-skill-item-text {
+.about-skill-list .about-skill-item-text {
     padding-top: 10px;
 }
 
@@ -548,10 +551,8 @@ li.examples-item:not(:last-child)::after {
 }
 
 .contacts-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    box-sizing: border-box;
+    padding: 49px 50px 50px 47px;
     background-color: var(--basik-white);
     height: 319px;
     width: 308px;
@@ -564,7 +565,6 @@ li.examples-item:not(:last-child)::after {
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
-    padding-left: 50px;
     margin: 0;
     margin-bottom: 23px;
 }
@@ -574,15 +574,14 @@ li.examples-item:not(:last-child)::after {
     font-style: inherit;
     color: var(--catalog-gray);
     width: 210px;
-    margin: 0 auto;
     text-align: left;
     margin-bottom: 10px;
 }
 
 .contacts-info-phone {
-    padding-left: 50px;
     margin: 0;
     margin-bottom: 37px;
+    color: var(--catalog-gray);
 }
 
 .contacts-info-phone a {
@@ -592,7 +591,14 @@ li.examples-item:not(:last-child)::after {
 .button-contacts {
     height: 50px;
     width: 219px;
-    margin-left: 50px;
+}
+
+.button-contacts:hover {
+    background-color: var(--light-red);
+}
+
+.button-contacts:active {
+    background-color: var(--dark-red);
 }
 
 
@@ -947,6 +953,7 @@ li.examples-item:not(:last-child)::after {
     font-family: inherit;
     font-weight: 500;
     color: var(--basik-black);
+    cursor: pointer;
 }
 
 .button-filter:active {
@@ -1124,8 +1131,8 @@ li.examples-item:not(:last-child)::after {
 }
 
 .catalog-pagination-item:last-child a:active {
-    width: 256px;
-    height: 46px;
+    width: 254px;
+    height: 44px;
 }
 
 
@@ -1220,6 +1227,7 @@ li.examples-item:not(:last-child)::after {
     border: 0;
     border-radius: 3px;
     margin-left: 100px;
+    cursor: pointer;
 }
 
 .popup-contacts-button:hover {
@@ -1290,7 +1298,7 @@ textarea.popup-contacts-area {
     color: var(--light-red);
 }
 
-#popup-contacts-area-text {
+.popup-contacts-area-text {
     resize: none;
 }
 

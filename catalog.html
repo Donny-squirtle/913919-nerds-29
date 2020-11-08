@@ -257,6 +257,25 @@
             </section>
         </div>
     </footer>
+    <section class="popup-contacts">
+        <button class="popup-contacts-close" type="button">Закрыть</button>
+        <h2 class="popup-contacts-title">Напишите нам</h2>
+        <form class="popup-form" action="#" method="post" oninput="">
+            <div class="popup-text">
+                <label for="name-contacts">Ваше имя</label>
+                <input class="popup-contacts-area" type="text" id="name-contacts" name="name" placeholder="Имя Фамилия">
+            </div>
+            <div class="popup-text">
+                <label for="e-mail-contacts">Ваше e-mail</label>
+                <input class="popup-contacts-area" type="text" id="e-mail-contacts" name="e-mail" placeholder="e-mail@example.com">
+            </div>
+            <div class="popup-text-contacts">
+                <label for="text-contacts">Текст письма</label>
+                <textarea class="popup-contacts-area popup-contacts-area-text" rows="4" name="letter-text" id="text-contacts" placeholder="В свободной форме"></textarea>
+            </div>
+        </form>
+        <button class="popup-contacts-button" type="submit">Отправить</button>
+    </section>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 
