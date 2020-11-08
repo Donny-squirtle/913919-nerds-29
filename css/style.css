@@ -74,6 +74,10 @@ a {
 
 /* Навигация */
 
+a.header-logo img {
+    margin-bottom: 10px;
+}
+
 .header-navigation-wrapper {
     display: flex;
 }
@@ -90,12 +94,12 @@ a.header-logo:active {
 .main-header {
     background-color: var(--light-gray);
     color: var(--basik-black);
-    height: 123px;
+    height: 116px;
 }
 
 .header-container {
     display: flex;
-    padding-top: 61px;
+    padding-top: 49px;
 }
 
 .main-navigation {
@@ -149,7 +153,7 @@ a.header-logo:active {
 
 .site-navigation li:active {
     border-bottom: 2px solid var(--basik-red);
-    height: 37px;
+    height: 42px;
 }
 
 
@@ -204,9 +208,9 @@ a.header-logo:active {
     position: relative;
     height: 18px;
     left: 51%;
-    width: 100px;
+    width: 110px;
     transform: translateX(-50%);
-    bottom: 110px;
+    bottom: 114px;
 }
 
 .button-control {
@@ -216,7 +220,7 @@ a.header-logo:active {
     border-radius: 50%;
     background-color: var(--basik-white);
     border: 0px;
-    margin-right: 8px;
+    margin-right: 13px;
     cursor: pointer;
 }
 
@@ -385,7 +389,7 @@ a.header-logo:active {
 
 .about-container {
     border-top: 2px solid var(--light-gray);
-    padding: 39px 0 75px 0;
+    padding: 36px 0 75px 0;
 }
 
 .about .container {
@@ -399,7 +403,7 @@ a.header-logo:active {
     line-height: 24px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 31px 0 31px 0;
+    margin: 32px 0 30px 2px;
     text-align: center;
 }
 
@@ -416,7 +420,7 @@ a.header-logo:active {
     font-size: 45px;
     line-height: 45px;
     color: var(--basik-black);
-    margin: 34px 0 0;
+    margin: 36px 0 0;
 }
 
 .about-text .about-text-item {
@@ -427,8 +431,8 @@ a.header-logo:active {
 .about-text .about-text-list-title {
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 40px;
-    margin-bottom: 25px;
+    margin-top: 43px;
+    margin-bottom: 23px;
 }
 
 .about-text-list {
@@ -481,7 +485,7 @@ a.header-logo:active {
 }
 
 .about-skill-list .about-skill-item-text {
-    padding-top: 10px;
+    padding-top: 12px;
 }
 
 .about-skill-item p {
@@ -518,22 +522,46 @@ a.header-logo:active {
     align-items: center;
     border-top: 2px solid var(--light-gray);
     border-bottom: 2px solid var(--light-gray);
-    height: 180px;
+    height: 184px;
+    width: 1158px;
+    box-sizing: border-box;
+    margin-bottom: 78px;
 }
 
 .examples-list {
     list-style: none;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     padding: 0;
     margin: 0;
+    width: 1158px;
 }
 
 .examples-item {
     position: relative;
-    width: 298px;
     display: flex;
     justify-content: center;
+    width: 300px;
+}
+
+.example-html {
+    margin-top: 15px;
+    margin-left: -40px;
+}
+
+.example-borodinski {
+    margin-left: 0px;
+}
+
+.example-pink {
+    margin-top: 2px;
+    margin-right: -3px;
+}
+
+.example-mishka {
+    margin-top: 9px;
+    margin-left: 1px;
 }
 
 li.examples-item:not(:last-child)::after {
@@ -568,16 +596,16 @@ li.examples-item:not(:last-child)::after {
     background: url(../img/map-1.jpg);
     height: 416px;
     background-repeat: no-repeat;
-    margin-top: 78px;
-    padding-bottom: 70px;
+    margin-top: 44px;
+    padding-bottom: 69px;
 }
 
 .contacts-info {
     box-sizing: border-box;
-    padding: 49px 50px 50px 47px;
+    padding: 48px 50px 50px 50px;
     background-color: var(--basik-white);
-    height: 319px;
-    width: 308px;
+    height: 308px;
+    width: 319px;
     z-index: 1000;
 }
 
@@ -597,12 +625,13 @@ li.examples-item:not(:last-child)::after {
     color: var(--catalog-gray);
     width: 210px;
     text-align: left;
-    margin-bottom: 10px;
+    line-height: 18px;
+    margin-bottom: 15px;
 }
 
 .contacts-info-phone {
     margin: 0;
-    margin-bottom: 37px;
+    margin-bottom: 34px;
     color: var(--catalog-gray);
 }
 
@@ -629,6 +658,9 @@ li.examples-item:not(:last-child)::after {
 
 .contacts iframe {
     position: absolute;
+    width: 100%;
+    height: 416px;
+    border: 0;
 }
 
 .page-footer-container {
@@ -642,6 +674,12 @@ li.examples-item:not(:last-child)::after {
     line-height: 36px;
     color: var(--basik-black);
     margin: 0;
+    padding-top: 5px;
+}
+
+.footer-text-item {
+    margin: 0;
+    padding-top: 10px;
 }
 
 .social-list {
@@ -650,7 +688,7 @@ li.examples-item:not(:last-child)::after {
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
-    margin: 0 120px 0 0;
+    margin: 0 100px 0 0;
 }
 
 .social-list li {
@@ -686,7 +724,7 @@ li.examples-item:not(:last-child)::after {
 
 .catalog-page-title {
     background-color: var(--light-gray);
-    height: 235px;
+    height: 239px;
     display: flex;
     align-items: center;
 }
@@ -698,13 +736,14 @@ li.examples-item:not(:last-child)::after {
     line-height: 55px;
     color: var(--basik-black);
     text-align: center;
+    padding-bottom: 33px;
 }
 
 
 /* Каталог*/
 
 .container-catalog {
-    margin-top: 55px;
+    margin-top: 53px;
     display: flex;
     justify-content: space-between;
 }
@@ -716,7 +755,7 @@ li.examples-item:not(:last-child)::after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 48px;
 }
 
 .catalog-filter p {
@@ -805,8 +844,15 @@ li.examples-item:not(:last-child)::after {
 
 .catalog-filter-main fieldset {
     border: 0 none;
-    margin: 15px 0 50px 0;
     padding: 0;
+}
+
+.catalog-filter-main_grid {
+    margin-top: 54px;
+}
+
+.catalog-filter-main_features {
+    margin-top: 24px;
 }
 
 .catalog-filter-main_title {
@@ -979,6 +1025,7 @@ li.examples-item:not(:last-child)::after {
     font-weight: 500;
     color: var(--basik-black);
     cursor: pointer;
+    margin-top: 26px;
 }
 
 .button-filter:active {
@@ -1000,7 +1047,7 @@ li.examples-item:not(:last-child)::after {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 80px;
+    grid-row-gap: 30px;
     grid-column-gap: 40px;
 }
 
@@ -1108,7 +1155,7 @@ li.examples-item:not(:last-child)::after {
 /* Пагинация каталога */
 
 .catalog-pagination {
-    margin-top: 54px;
+    margin-top: 60px;
     padding: 0;
     display: flex;
     justify-content: flex-start;
@@ -1297,6 +1344,7 @@ li.examples-item:not(:last-child)::after {
 
 .popup-contacts-area {
     display: inline-block;
+    vertical-align: top;
     box-sizing: border-box;
     line-height: 18px;
     color: var(--popup-basik-grey);
@@ -1339,7 +1387,7 @@ textarea.popup-contacts-area {
 /*Топ меню */
 
 .nav-active {
-    padding-bottom: 13px;
+    padding-bottom: 18px;
     border-bottom: 2px solid var(--basik-red);
 }
 

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/min.style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
@@ -31,7 +31,7 @@
     <main>
         <section class="catalog-page-title">
             <div class="container">
-                <h1>Магазин готовы шаблонов</h1>
+                <h1>Магазин готовыx шаблонов</h1>
             </div>
         </section>
         <section class="catalog-main-content">
@@ -41,7 +41,7 @@
                     <h2 class="visually-hidden">Фильтр товаров</h2>
                     <form method="get" class="catalog-filter-main">
                         <fieldset class="catalog-filter-main_price">
-                            <legend class="catalog-filter-main_title">стоимось:</legend>
+                            <legend class="catalog-filter-main_title">стоимость:</legend>
                             <div class="range-filter">
                                 <div class="range-controls">
                                     <div class="scale">
@@ -205,7 +205,7 @@
             </div>
         </section>
         <section class="contacts">
-            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5772364aff8652149481db71923195f91fdd47f5d28d2a982af5074bfd1ae488&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5772364aff8652149481db71923195f91fdd47f5d28d2a982af5074bfd1ae488&amp;source=constructor"></iframe>
             <div class="container container-contacts">
                 <h2 class="visually-hidden">Контактная информация</h2>
                 <div class="contacts-info">
@@ -214,7 +214,7 @@
                         191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                     </address>
                     <p class="contacts-info-phone">
-                        тел. <a href="tel:+78122757575">+7(812) 275-75-75</a>
+                        тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a>
                     </p>
                     <a href="" class="button button-contacts">Напишите нам</a>
                 </div>
@@ -253,7 +253,7 @@
             <section class="footer-text">
                 <h2 class="visually-hidden">Давайте дружить!</h2>
                 <p>Давайте дружить, это выгодно!</p>
-                <p>Скидка 10% для друзей из социальных сетей.</p>
+                <p class="footer-text-item">Скидка 10% для друзей из социальных сетей.</p>
             </section>
         </div>
     </footer>
@@ -263,20 +263,20 @@
         <form class="popup-form" action="#" method="post" oninput="">
             <div class="popup-text">
                 <label for="name-contacts">Ваше имя</label>
-                <input class="popup-contacts-area" type="text" id="name-contacts" name="name" placeholder="Имя Фамилия">
+                <input class="popup-contacts-area invalid" type="text" id="name-contacts" name="name" placeholder="Имя Фамилия" required>
             </div>
             <div class="popup-text">
                 <label for="e-mail-contacts">Ваше e-mail</label>
-                <input class="popup-contacts-area" type="text" id="e-mail-contacts" name="e-mail" placeholder="e-mail@example.com">
+                <input class="popup-contacts-area" type="text" id="e-mail-contacts" name="e-mail" placeholder="e-mail@example.com" required>
             </div>
             <div class="popup-text-contacts">
                 <label for="text-contacts">Текст письма</label>
-                <textarea class="popup-contacts-area popup-contacts-area-text" rows="4" name="letter-text" id="text-contacts" placeholder="В свободной форме"></textarea>
+                <textarea class="popup-contacts-area popup-contacts-area-text" rows="4" name="letter-text" id="text-contacts" placeholder="В свободной форме" required></textarea>
             </div>
         </form>
         <button class="button popup-contacts-button" type="submit">Отправить</button>
     </section>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/min.script.js"></script>
 </body>
 
 </html>
